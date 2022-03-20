@@ -23,7 +23,7 @@ public class TemporalMap<Key, Value> {
                 try {
                     Thread.sleep(coolDown);
                 } catch (InterruptedException ignored) {}
-                for(Key key: cache.keySet()){
+                for(Key key: new ArrayList<>(cache.keySet())){
                     TemporalObject<Value> o = cache.get(key);
                     o.time-=1;
                     if(o.time<1){
