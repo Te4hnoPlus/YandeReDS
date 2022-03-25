@@ -1,7 +1,7 @@
 package Example;
 
 
-public class ExampleMain {
+public class Main {
 
     public static ExampleBot exampleBot;
     public static final String BOT_NAME = "example_bot";
