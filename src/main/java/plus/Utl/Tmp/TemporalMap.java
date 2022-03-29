@@ -17,7 +17,7 @@ public class TemporalMap<Key, Value> {
 
     public TemporalMap(int livingTime, final int coolDown){
         this.livingTime = livingTime;
-        cache = new HashMap<>(livingTime);
+        cache = new HashMap<>();
         t = new Thread(() -> {
             while(!cache.isEmpty()){
                 try {
